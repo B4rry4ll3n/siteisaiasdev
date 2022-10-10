@@ -67,4 +67,9 @@
     cursor: pointer;
     transition: all 1s;
 }
+.card-body p-4 text-black{
+    
+    padding: 0;
+
+}
 
