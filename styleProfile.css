@@ -9,6 +9,7 @@
     background: linear-gradient(to right, rgb(0, 0, 0), rgba(166, 193, 238, 1))
     }
     .table{
+        margin-top: 10%;
         width: 100%;
     }
     .table th {
@@ -16,12 +17,12 @@
         width: 100vw;
         margin-top: 10%;
     }
-    .p-4 {
-        margin-top: 10%;
-        margin-bottom: 0;
-    }
+ 
     .card{
         margin: 0%;
+        padding: 0%;
+    }
+    .mb-5{
         padding: 0%;
     }
 
@@ -29,16 +30,22 @@
     @media (max-width: 768px) {
 
         .table {
-            margin-top: 10%;
-            display: block;
-            position: relative;
             width: 100%;
         }
-        .table th{
-            display: block;
-            width: 100%;
-
+        .table th {
+        
+            max-width: 10px;
         }
+        .table img {
+            padding: 0%;
+            max-width: 60px;
+        }
+        .p-4 {
+            padding: 1.5rem!important;
+            margin-top: 10px;
+            padding-bottom: 0%;
+        }
+    
         
     }
 
