@@ -6,6 +6,9 @@
 body{
     background-color: #eee;
 }
+.rounded-top text-white d-flex flex-row{
+    z-index: -1000;
+}
 header{
     padding: 1rem;
     height: 150px;
