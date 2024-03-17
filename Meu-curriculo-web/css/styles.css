@@ -3975,8 +3975,12 @@ fieldset:disabled .btn {
 .btn-group-sm>.btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
+  font-family: Arial, Helvetica, sans-serif;
   border-radius: 0.2rem;
 }
+
+
+
 
 .fade {
   transition: opacity 0.15s linear;

@@ -1,0 +1,75 @@
+
+  
+  .buttonVoltar {
+ 
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #092b5a;
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px #092b5a;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+  
+  .buttonVoltar::after {
+  content: '';
+    border-radius: 1000px;
+    min-width: calc(80px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #adc4e4;
+    box-shadow: 0 0 60px #092b5a;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .buttonVoltar:hover, .buttonVoltar:focus {
+    color: #092b5a;
+    transform: translateY(-6px);
+  }
+  
+  .buttonVoltar:hover::before, .buttonVoltar:focus::before {
+    opacity: 5;
+  }
+  
+  .buttonVoltar::after {
+    content: '';
+    width: 5px; height: 5px;
+    border-radius: 100%;
+    border: 6px solid #092b5a;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  .buttonVoltar:hover::after, .buttonVoltar:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 90px;
+      height: 90px;
+      opacity: 0;
+    }
+  }
